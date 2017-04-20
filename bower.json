@@ -9,6 +9,9 @@
   "overrides": {
     "sammy": {
       "main": "lib/sammy.js"
+    },
+    "jquery": {
+      "main": "NA"
     }
   },
   "devDependencies": {
