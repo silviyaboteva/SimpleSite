@@ -73,7 +73,7 @@ button{
 }
 
 .back-to-top:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: $dark-theme-color; /* Add a dark-grey background on hover */
 }
 
 
@@ -183,6 +183,14 @@ button{
                 padding: 5px;
                 &:last-child {
                     border-right: 0;
+                    &:hover{
+                        border-radius: 0 20px 0 0;
+                    }
+                }
+                &:first-child{
+                    &:hover{
+                        border-radius: 20px 0 0 0;
+                    }
                 }
                 &:hover {
                     @extend .on-hover;
