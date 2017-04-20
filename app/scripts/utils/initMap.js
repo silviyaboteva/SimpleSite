@@ -1,9 +1,10 @@
 //Init Google Map 
 function initMap() {
+    
     var storage = new google.maps.LatLng(41.995843, 24.088254);
     var store1 = new google.maps.LatLng(41.987402, 24.083208);
-    var store2 = new google.maps.Latlng(41.988063, 24.090988);
-
+    var store2 = new google.maps.LatLng(41.988063, 24.090988);
+    
     var myOptions = {
         zoom: 14,
         center: storage,

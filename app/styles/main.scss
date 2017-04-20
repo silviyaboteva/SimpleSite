@@ -31,13 +31,25 @@ p {
     margin: 0;
 }
 
-html,
+html, 
 body {
     font-size: 100%;
     background: url('../images/background.jpg');
 }
-
-
+ 
+a {
+  outline: 0;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+button{
+      outline: 0 !important;
+}
 /* Logo */
 
 .sr {
