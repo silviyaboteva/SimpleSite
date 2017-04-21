@@ -31,49 +31,62 @@ p {
     margin: 0;
 }
 
-html, 
+html,
 body {
     font-size: 100%;
     background: url('../images/background.jpg');
 }
- 
+
 a {
-  outline: 0;
-  text-decoration: none;
-  &:hover{
+    outline: 0;
     text-decoration: none;
-  }
-  &:visited {
-    text-decoration: none;
-  }
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
 }
-button{
-      outline: 0 !important;
+
+button {
+    outline: 0 !important;
 }
 
 .back-to-top {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: $theme-color; /* Set a background color */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: $theme-color;
+    /* Set a background color */
     background-image: url('../images/topArrow.png');
     background-repeat: no-repeat;
-    background-position: center; 
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    background-position: center;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
     font-size: 30px;
     font-weight: bold;
-    width:60px;
-    height:60px;
-    border-radius: 100%; /* Rounded corners */
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    /* Rounded corners */
 }
 
 .back-to-top:hover {
-    background-color: $dark-theme-color; /* Add a dark-grey background on hover */
+    background-color: $dark-theme-color;
+    /* Add a dark-grey background on hover */
 }
 
 
@@ -183,12 +196,12 @@ button{
                 padding: 5px;
                 &:last-child {
                     border-right: 0;
-                    &:hover{
+                    &:hover {
                         border-radius: 0 20px 0 0;
                     }
                 }
-                &:first-child{
-                    &:hover{
+                &:first-child {
+                    &:hover {
                         border-radius: 20px 0 0 0;
                     }
                 }
@@ -406,6 +419,51 @@ button{
         img {
             width: 2rem
         }
+    }
+}
+
+
+/* Start Stores and Storage templates */
+
+.first {
+    margin-left: 35px;
+}
+
+.stores-аvailability {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    li {
+        &:before {
+            content: '\f14a';
+            font-family: FontAwesome;
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.image {
+    text-align: center;
+    img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+/* Start Gallery template */
+
+.gallery {
+    padding: 10px 0;
+    img {
+        width: 100%;
+        height: auto;
+        border: 2px solid $theme-color;
+        margin: 15px 0;
     }
 }
 
